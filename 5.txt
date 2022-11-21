@@ -1,0 +1,8 @@
+Data crawling is used to extract data from the internet.
+It can be done using APIs.
+We just have to find a suitable API and use some python code using the JSON package of python.
+An example of it is offered below.
+import requests, json
+endpoint = "https://api.github.com/users/anandita-3217/repos"
+repos = json.loads(requests.get(endpoint).text)
+To extract image data we may use online scraping tools such as Image Cybrog
